@@ -10,17 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +20,7 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
-    <!-- fontawesome -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/6273abfcd5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -69,8 +58,9 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <div class="navbar-end space-x-3"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <div class="navbar-end space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden lg:block">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
@@ -78,20 +68,32 @@
                     </div>
                 </div>
             </nav>
+
             <!-- nav-bar end -->
-            <div class="carousel w-full ">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="Images/1.png" class="w-11/12 lg:w-10/12 mx-4 lg:mx-24 mt-8 lg:mt-14" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+
+            <div class="relative">
+                <div class="carousel w-full ">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-11/12 lg:w-10/12 mx-4 lg:mx-24 mt-8 lg:mt-14" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="Images/1.png" class="w-11/12 lg:w-10/12 mx-4 lg:mx-24 mt-8 lg:mt-14" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="Images/1.png" class="w-11/12 lg:w-10/12 mx-4 lg:mx-24 mt-8 lg:mt-14" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div class="absolute bg-black text-white lg:p-5 rounded-lg space-y-3 -bottom-32 lg:bottom-8 lg:right-32 mx-4 p-3">
+                        <h3 class="text-lg md:text-2xl font-extrabold">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p class="max-w-[502px] font-medium p-white text-sm lg:text-base">
+                            Discover field heroes, brave and inspiring, shaping a world of courage, determination, and remarkable achievements. Join them now!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -99,7 +101,7 @@
     </header>
     <!-- header section done -->
     <main>
-        <section class="container mx-auto mt-24 space-y-14">
+        <section class="container mx-auto mt-40 lg:mt-24 space-y-14">
             <div class="text-center">
                 <h1 class="font-extrabold text-2xl lg:text-3xl pb-6">Professional Hockeys Club</h1>
                 <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna
